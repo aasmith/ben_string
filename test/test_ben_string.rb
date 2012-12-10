@@ -22,4 +22,8 @@ class TestBenString < Test::Unit::TestCase
     assert BenString.in_use?
   end
 
+  def test_namespaces
+    assert_equal BenjaminString::BenString, BenString
+  end
+
 end
